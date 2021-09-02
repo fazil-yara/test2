@@ -1,0 +1,36 @@
+{
+  "baseUrl": "https://app.staging.at.farm/",
+  "defaultCommandTimeout": 20000,
+  "integrationFolder": "test/specs",
+  "screenshotsFolder": "test/screenshots",
+  "videosFolder": "test/videos",
+  "fixturesFolder": "test/fixtures",
+  "supportFile": "test/support/index.ts",
+  "pluginsFile": "test/plugins/index.js",
+  "reporter": "junit",
+  "testFiles": "**/*.feature",
+  "env": {
+    "TAGS": "not @ignore",
+    "MAILSLURP_KEY": "dfc6d98c67fd5db31020fdcdd88638a52b3eea120ba5f6f44e1459c5671233e2",
+    "ATFARM_API_URL": "https://api.staging.at.farm",
+    "COGNITO_CLIENT_ID": "68r41pcnpo9ad2usukj3aeislu",
+    "COGNITO_USER_POOL_ID": "eu-central-1_224rkykMg",
+    "browserPermissions": {
+      "geolocation": "allow"
+    },
+    "FAIL_FAST_ENABLED": false,
+    "email": "amfazil.ahamed@yara.com",
+    "password": "123456789"
+  },
+  "reporterOptions": {
+    "mochaFile": "test/results/output-[hash].xml",
+    "toConsole": true
+  },
+  "retries": {
+    "runMode": 2,
+    "openMode": 2
+  },
+  "experimentalRunEvents": true,
+  "chromeWebSecurity": false,
+  "includeShadowDom": true
+}
